@@ -63,24 +63,24 @@ public class StarPayService {
 		user.setMobileNumber(req.getMobileNumber());
 		user.setCompanyName(req.getCompanyName());
 	
-//		List<RequestUserDetails.Address> rAddress=new ArrayList<RequestUserDetails.Address>();
-		Set<RequestUserDetails.Address> add=req.getAddress();
-//		RequestUserDetails ad2=new RequestUserDetails();
-		Set<com.example.STARPAY.domain.Address> domainAdd = new HashSet<com.example.STARPAY.domain.Address>();
-		for(Address a: add) {
-//			RequestUserDetails.Address ad1=new RequestUserDetails.Address();
-			com.example.STARPAY.domain.Address ad1=new com.example.STARPAY.domain.Address();
-//			ad1.setId(a.getId());
-			ad1.setFullAddress(a.getFullAddress());
-			ad1.setCity(a.getCity());
-			ad1.setZipCode(a.getZincode());
-			ad1.setProvince(a.getProvince());
-			ad1.setAddressType(a.getAddressType());
-//			ad1.setStarPayUser(user.setId(a.getUserId()));
-			domainAdd.add(ad1);
-			
-		}
-		user.setAddress(domainAdd);
+//		List<RequestUserDetails.Address> rAddress=new ArrayList<RequestUserDetails.Address>();dele
+//		Set<RequestUserDetails.Address> add=req.getAddress();
+////		RequestUserDetails ad2=new RequestUserDetails();dele
+//		Set<com.example.STARPAY.domain.Address> domainAdd = new HashSet<com.example.STARPAY.domain.Address>();
+//		for(Address a: add) {
+////			RequestUserDetails.Address ad1=new RequestUserDetails.Address();dele
+//			com.example.STARPAY.domain.Address ad1=new com.example.STARPAY.domain.Address();
+////			ad1.setId(a.getId());
+//			ad1.setFullAddress(a.getFullAddress());
+//			ad1.setCity(a.getCity());
+//			ad1.setZipCode(a.getZincode());
+//			ad1.setProvince(a.getProvince());
+//			ad1.setAddressType(a.getAddressType());
+////			ad1.setStarPayUser(user.setId(a.getUserId()));dele
+//			domainAdd.add(ad1);
+//			
+//		}
+//		user.setAddress(domainAdd);
 		
 //		user.setAddress(req.getAddress());
 		

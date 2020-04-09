@@ -42,8 +42,8 @@ public class StarPayController {
 	
 	@PostMapping("/addUser")
 	public GenericResponse addUser(@RequestBody RequestUserDetails req) {
-		GenericResponse genericResponse=starService.addUser(req);
-		return genericResponse;
+//		GenericResponse genericResponse=
+		return starService.addUser(req);
 	}
 	
 	//-------------------------get StrapayUser--------------------------------
