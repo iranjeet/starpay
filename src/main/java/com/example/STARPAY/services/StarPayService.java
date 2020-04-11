@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import javax.transaction.Transactional;
-import  org.slf4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +18,7 @@ import com.example.STARPAY.dao.Assn_User_AddressDao;
 import com.example.STARPAY.dao.Assn_User_FeaturesDao;
 import com.example.STARPAY.dao.RetailerFeatureDao;
 import com.example.STARPAY.dao.StarPayUserDao;
+import com.example.STARPAY.domain.History;
 import com.example.STARPAY.domain.RetailerFeature;
 import com.example.STARPAY.domain.StarPayUser;
 import com.example.STARPAY.dto.Request.RequestAllFeature;
@@ -30,39 +31,37 @@ import com.example.STARPAY.dto.Response.ResponceRetailerFeature.Buttons;
 import com.example.STARPAY.dto.Response.ResponceUserDetails;
 import com.example.STARPAY.dto.generic.GenericResponse;
 
-
 @Service
 @Transactional
 public class StarPayService {
 	@Autowired
 	AddressDao aDao;
-	
-	@Autowired 
+
+	@Autowired
 	RetailerFeatureDao rDao;
-	
+
 	@Autowired
 	StarPayUserDao uDao;
-	
+
 	@Autowired
 	Assn_User_AddressDao assn_User_AddressDao;
-	
+
 	@Autowired
 	Assn_User_FeaturesDao assn_User_FeaturesDao;
-	
 
-    private final Logger log = LoggerFactory.getLogger(StarPayService.class);
+	private final Logger log = LoggerFactory.getLogger(StarPayService.class);
 
 	public GenericResponse addUser(RequestUserDetails req) {
 		// TODO Auto-generated method stub
-		GenericResponse genericResponse=new GenericResponse();
-		StarPayUser user=new StarPayUser();
+		GenericResponse genericResponse = new GenericResponse();
+		StarPayUser user = new StarPayUser();
 		user.setFirstName(req.getFirstName());
 		user.setLastName(req.getLastName());
 		user.setGender(req.getGender());
 		user.setStatus(req.getStatus());
 		user.setMobileNumber(req.getMobileNumber());
 		user.setCompanyName(req.getCompanyName());
-	
+
 //		List<RequestUserDetails.Address> rAddress=new ArrayList<RequestUserDetails.Address>();dele
 //		Set<RequestUserDetails.Address> add=req.getAddress();
 ////		RequestUserDetails ad2=new RequestUserDetails();dele
@@ -81,9 +80,9 @@ public class StarPayService {
 //			
 //		}
 //		user.setAddress(domainAdd);
-		
+
 //		user.setAddress(req.getAddress());
-		
+
 //		List<Address> address=new ArrayList<RequestUserDetails.Address>();
 //		for(Address a:address) {
 //			RequestUserDetails.Address ad1=new RequestUserDetails.Address();
@@ -104,11 +103,11 @@ public class StarPayService {
 	}
 
 	public List<ResponceUserDetails> getAllUser() {
-		ResponceUserDetails responce=new ResponceUserDetails();
-		List<ResponceUserDetails> rlist=new ArrayList<ResponceUserDetails>();
-		List<StarPayUser> starPayUser=uDao.getAllUser();
-		for(StarPayUser s:starPayUser) {
-			ResponceUserDetails res=new  ResponceUserDetails();
+		ResponceUserDetails responce = new ResponceUserDetails();
+		List<ResponceUserDetails> rlist = new ArrayList<ResponceUserDetails>();
+		List<StarPayUser> starPayUser = uDao.getAllUser();
+		for (StarPayUser s : starPayUser) {
+			ResponceUserDetails res = new ResponceUserDetails();
 			res.setId(s.getId());
 			res.setFirstName(s.getFirstName());
 			res.setLastName(s.getLastName());
@@ -118,25 +117,25 @@ public class StarPayService {
 //			res.setAddress(s.getAddress());			
 			rlist.add(res);
 		}
-	
+
 		return rlist;
 	}
 
 	public ResponceRetailerFeature getButtonFeature(RequestRetailerFeature id) {
 		// TODO Auto-generated method stub
-		ResponceRetailerFeature feature=new ResponceRetailerFeature();
-		List<Buttons> b1=new ArrayList<ResponceRetailerFeature.Buttons>();
-		RetailerFeature kFeature=rDao.getById(id);
-		List<RetailerFeature> bList=new ArrayList<RetailerFeature>();
-		for(RetailerFeature ref:bList) {
-			Buttons b=new ResponceRetailerFeature.Buttons();
+		ResponceRetailerFeature feature = new ResponceRetailerFeature();
+		List<Buttons> b1 = new ArrayList<ResponceRetailerFeature.Buttons>();
+		RetailerFeature kFeature = rDao.getById(id);
+		List<RetailerFeature> bList = new ArrayList<RetailerFeature>();
+		for (RetailerFeature ref : bList) {
+			Buttons b = new ResponceRetailerFeature.Buttons();
 			b.setId(ref.getId());
 			b.setFeatureName(ref.getFeatureName());
 			b.setStatus(ref.getStatus());
 			b.setIsActive(ref.getIsActive());
 			b1.add(b);
 		}
-		
+
 		return feature;
 	}
 
@@ -146,12 +145,11 @@ public class StarPayService {
 //		RetailerFeature feature=rDao.getAllRetailerFeature();
 		
 		
-		
 		GenericResponse genericResponse=new GenericResponse();
 		genericResponse.setApiSucessStatus(true);
 		genericResponse.setApiMessage("User-Added sucessfully");
 		log.info("User Added sucessfully");
 		return genericResponse;
 	}
-	
+
 }
