@@ -141,11 +141,10 @@ public class StarPayService {
 
 	public GenericResponse setButtonFeature(RequestAllFeature Id) {
 		// TODO Auto-generated method stub
-		List<RequestAllFeature> allFeatures=new ArrayList<RequestAllFeature>();
+		List<RequestAllFeature> allFeatures = new ArrayList<RequestAllFeature>();
 //		RetailerFeature feature=rDao.getAllRetailerFeature();
-		
-		
-		GenericResponse genericResponse=new GenericResponse();
+
+		GenericResponse genericResponse = new GenericResponse();
 		genericResponse.setApiSucessStatus(true);
 		genericResponse.setApiMessage("User-Added sucessfully");
 		log.info("User Added sucessfully");
