@@ -1,5 +1,6 @@
 package com.example.STARPAY;
 
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -17,8 +18,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.example.STARPAY.controller.StarPayController;
+import com.example.STARPAY.dao.RetailerFeatureDao;
+import com.example.STARPAY.domain.RetailerFeature;
 import com.example.STARPAY.domain.StarPayUser;
+import com.example.STARPAY.dto.Request.RequestRetailerFeature;
 import com.example.STARPAY.dto.Request.RequestUserDetails;
+import com.example.STARPAY.dto.Response.ResponceRetailerFeature;
 import com.example.STARPAY.dto.Response.ResponceUserDetails;
 import com.example.STARPAY.dto.generic.GenericResponse;
 import com.example.STARPAY.services.StarPayService;
@@ -78,7 +83,7 @@ public class StarPayControllerTest {
 		List<ResponceUserDetails> rlist = new ArrayList<ResponceUserDetails>();
 		List<StarPayUser> starpayUsers = new ArrayList<>();
 		for (StarPayUser s : starpayUsers) {
-//			res.setId(2);XXX
+			res.setId(2L);
 			res.setFirstName("Ranjeet");
 			res.setLastName("Kumar");
 			res.setMobileNumber("uy3iui3y2o2");
@@ -90,6 +95,26 @@ public class StarPayControllerTest {
 		Mockito.when(starService.getAllUser()).thenReturn(rlist);
 		Assert.assertEquals(rlist, controller.getAllUser());
 
+	}
+	
+	@Test
+	public void testGetButtonFeature() {
+		RetailerFeatureDao rDao=new RetailerFeatureDao();
+		RequestRetailerFeature id=new RequestRetailerFeature();
+		ResponceRetailerFeature feature=new ResponceRetailerFeature();
+		List<ResponceRetailerFeature.Buttons> b1=new ArrayList<>();
+//		RetailerFeature rFeature=rDao.getById(id);
+		List<RetailerFeature> rList=new ArrayList<RetailerFeature>();
+		for(RetailerFeature ref:rList) {
+			ResponceRetailerFeature.Buttons b=new ResponceRetailerFeature.Buttons();
+			b.setFeatureName("kajshdiak");
+			b.setIsActive(true);
+			b.setStatus("Done");
+			b.setId(1L);
+			b1.add(b);
+		}
+		Mockito.when(starService.getButtonFeature(id)).thenReturn(feature);
+		Assert.assertEquals(feature, controller.getButtonFeature(id));
 	}
 
 }
