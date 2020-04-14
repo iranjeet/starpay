@@ -37,7 +37,7 @@ public class StarPayControllerTest {
 	@InjectMocks
 	StarPayController controller;
 
-	private MockMvc mockMvc;
+//	private MockMvc mockMvc;
 
 	@Mock
 	StarPayService starService;

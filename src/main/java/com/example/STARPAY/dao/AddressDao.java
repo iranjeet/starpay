@@ -24,6 +24,7 @@ public class AddressDao {
 		return em.find(Address.class, id);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Address> getAllAddress(){
 		return (List<Address>) em.createQuery("from Address a");
 	}
