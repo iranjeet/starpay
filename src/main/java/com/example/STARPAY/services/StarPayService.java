@@ -22,6 +22,7 @@ import com.example.STARPAY.domain.History;
 import com.example.STARPAY.domain.RetailerFeature;
 import com.example.STARPAY.domain.StarPayUser;
 import com.example.STARPAY.dto.Request.RequestAllFeature;
+import com.example.STARPAY.dto.Request.RequestRd;
 import com.example.STARPAY.dto.Request.RequestRetailerFeature;
 import com.example.STARPAY.dto.Request.RequestUserDetails;
 import com.example.STARPAY.dto.Request.RequestUserDetails.Address;
@@ -148,6 +149,15 @@ public class StarPayService {
 		genericResponse.setApiSucessStatus(true);
 		genericResponse.setApiMessage("User-Added sucessfully");
 		log.info("User Added sucessfully");
+		return genericResponse;
+	}
+
+	public GenericResponse setRd(RequestRd rd) {
+		// TODO Auto-generated method stub
+		
+		GenericResponse genericResponse=new GenericResponse();
+		genericResponse.setApiMessage("Sucessfully Rd Created");
+		genericResponse.setApiSucessStatus(true);
 		return genericResponse;
 	}
 
