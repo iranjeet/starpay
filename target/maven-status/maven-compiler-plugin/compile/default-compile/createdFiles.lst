@@ -9,8 +9,12 @@ com\example\STARPAY\dto\Response\ResponceRetailerFeature$Buttons.class
 META-INF\spring-configuration-metadata.json
 com\example\STARPAY\dto\Response\ResponceAddress.class
 com\example\STARPAY\StarpayRanjeetApplication.class
+com\example\STARPAY\domain\Assn_User_Address.class
+com\example\STARPAY\dto\Request\RequestRd.class
 com\example\STARPAY\dto\Request\RequestRetailerFeature.class
 com\example\STARPAY\dao\Assn_User_AddressDao.class
+com\example\STARPAY\dto\Response\ResponceUserDetails$Address.class
+com\example\STARPAY\domain\History.class
 com\example\STARPAY\domain\Rd.class
 com\example\STARPAY\dto\generic\GenericResponse.class
 com\example\STARPAY\dao\StarPayUserDao.class

@@ -37,14 +37,26 @@ public class StarPayUser {
 	@Column(name = "status")
 	private String status;
 
-	@Column(name = "isActive")
-	private boolean isActive = true;
+	@Column(name = "isActive",columnDefinition = "tinyint(1) default 1")
+	private Boolean isActive = true;
 
 	@Column(name = "gender")
 	private String gender;
 
 	@Column(name = "company_name")
 	private String companyName;
+	
+	@Column(name="isAdmin",columnDefinition = "tinyint(1) default 0")
+	private Boolean isAdmin=false;
+
+
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
 
 	@OneToMany(fetch = FetchType.LAZY,  cascade = CascadeType.ALL)//mappedBy = "retailerFeature",
 	private Set<Assn_User_Features> retailerFearture ;//=new TreeSet<Assn_User_Features>();

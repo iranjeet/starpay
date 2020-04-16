@@ -11,6 +11,15 @@ public class ResponceUserDetails {
 
 	private String firstName, lastName, mobileNumber, status;
 	private String gender, companyName;
+	private Boolean isAdmin;
+	public Boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public void setAdmin(Boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+
 	private Set<Address> address=new HashSet<ResponceUserDetails.Address>();
 	public Set<Address> getAddress() {
 		return address;

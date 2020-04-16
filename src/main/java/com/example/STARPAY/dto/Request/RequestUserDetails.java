@@ -9,6 +9,7 @@ public class RequestUserDetails {
 		
 	private String firstName, lastName, mobileNumber ,status ;
 	private String gender, companyName;
+	
 //	private List<Address> address=new ArrayList<RequestUserDetails.Address>();
 //	private List<Feature> feature=new ArrayList<RequestUserDetails.Feature>();
 	

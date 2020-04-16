@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.STARPAY.StarpayRanjeetApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 81.42 s <<< FAILURE! - in com.example.STARPAY.StarpayRanjeetApplicationTests
-contextLoads  Time elapsed: 0.111 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationEntityManagerFactory' defined in class path resource [com/example/STARPAY/config/ApplicationDbConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: application] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.example.STARPAY.domain.Address column: Id (should be mapped with insert="false" update="false")
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: application] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.example.STARPAY.domain.Address column: Id (should be mapped with insert="false" update="false")
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.example.STARPAY.domain.Address column: Id (should be mapped with insert="false" update="false")
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in com.example.STARPAY.StarpayRanjeetApplicationTests

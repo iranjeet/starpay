@@ -115,6 +115,8 @@ public class StarPayService {
 			res.setGender(s.getGender());
 			res.setMobileNumber(s.getMobileNumber());
 			res.setStatus(s.getStatus());
+			if(s.isAdmin())
+			res.setAdmin(s.isAdmin());
 //			res.setAddress(s.getAddress());			
 			rlist.add(res);
 		}
