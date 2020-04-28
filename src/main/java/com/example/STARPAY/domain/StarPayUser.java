@@ -34,10 +34,10 @@ public class StarPayUser {
 	@Column(name = "mobile_no")
 	private String mobileNumber;
 
-	@Column(name = "status")
-	private String status;
+	@Column(name = "status", columnDefinition = "varchar(255) default 'Active'")
+	private String status = "Active";
 
-	@Column(name = "isActive",columnDefinition = "tinyint(1) default 1")
+	@Column(name = "isActive", columnDefinition = "tinyint(1) default 1")
 	private Boolean isActive = true;
 
 	@Column(name = "gender")
@@ -45,24 +45,48 @@ public class StarPayUser {
 
 	@Column(name = "company_name")
 	private String companyName;
+
+	@Column(name = "isAdmin", columnDefinition = "tinyint(1) default 0")
+	private Boolean isAdmin = false;
+
+//	@Column(name = "pd_0_rd_1")
+//	private Boolean isPd0Rd1;
 	
-	@Column(name="isAdmin",columnDefinition = "tinyint(1) default 0")
-	private Boolean isAdmin=false;
+	@OneToMany(fetch = FetchType.LAZY,mappedBy = "retailerFeature", cascade = CascadeType.ALL) // mappedBy = "retailerFeature",
+	private Set<Assn_User_Features> retailerFearture;// =new TreeSet<Assn_User_Features>();
 
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "address",cascade = CascadeType.ALL) // mappedBy = "address",
+	@JoinColumn(name ="Id", referencedColumnName = "Id")
+	private Set<Address> address;// =new TreeSet<Address>();
 
-	public boolean isAdmin() {
+	@ManyToOne
+	private Rd rd;
+	
+	public Rd getRd() {
+		return rd;
+	}
+
+	public void setRd(Rd rd) {
+		this.rd = rd;
+	}
+	
+	public Boolean getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
+
+	public Boolean getIsAdmin() {
 		return isAdmin;
 	}
 
-	public void setAdmin(boolean isAdmin) {
+	public void setIsAdmin(Boolean isAdmin) {
 		this.isAdmin = isAdmin;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY,  cascade = CascadeType.ALL)//mappedBy = "retailerFeature",
-	private Set<Assn_User_Features> retailerFearture ;//=new TreeSet<Assn_User_Features>();
 	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)// mappedBy = "address",
-	private Set<Address> address;//=new TreeSet<Address>();
 
 	public Set<Address> getAddress() {
 		return address;
@@ -72,16 +96,7 @@ public class StarPayUser {
 		this.address = address;
 	}
 
-//	@ManyToOne
-//	private Rd rd;
-//	
-//	public Rd getRd() {
-//		return rd;
-//	}
-//
-//	public void setRd(Rd rd) {
-//		this.rd = rd;
-//	}
+
 
 	public Long getId() {
 		return id;
@@ -123,14 +138,6 @@ public class StarPayUser {
 		this.status = status;
 	}
 
-	public boolean isActive() {
-		return isActive;
-	}
-
-	public void setActive(boolean isActive) {
-		this.isActive = isActive;
-	}
-
 	public String getGender() {
 		return gender;
 	}
@@ -154,8 +161,5 @@ public class StarPayUser {
 	public void setRetailerFearture(Set<Assn_User_Features> retailerFearture) {
 		this.retailerFearture = retailerFearture;
 	}
-
-
-	
 
 }

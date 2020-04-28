@@ -1,5 +1,7 @@
 package com.example.STARPAY.dao;
 
-public class WalletDao {
+import java.io.Serializable;
+
+public class WalletDao implements Serializable {
 
 }

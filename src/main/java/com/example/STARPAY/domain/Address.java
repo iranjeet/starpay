@@ -37,7 +37,7 @@ public class Address {
 	private String addressType;
 
 	@ManyToOne
-	@JoinColumn(name="user_id")
+//	@JoinColumn(name="user_id")
 	private StarPayUser starPayUser;
 //
 //	@ManyToOne(optional = false)

@@ -1,5 +1,6 @@
 package com.example.STARPAY.dao;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.example.STARPAY.domain.Address;
 
 @Repository
-public class AddressDao {
+public class AddressDao implements Serializable{
 	@PersistenceContext
 	EntityManager em;
 	 

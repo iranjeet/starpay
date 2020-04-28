@@ -4,68 +4,54 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class RequestAllFeature {
-	private List<Feature> feature;
 
-	public List<Feature> getFeature() {
-		return feature;
+	private Timestamp createDate;
+	private Long FeatureId;
+
+	private String featureName;
+
+	private String Status;
+
+	private Boolean isActive;
+
+	public Long getFeatureId() {
+		return FeatureId;
 	}
 
-	public void setFeature(List<Feature> feature) {
-		this.feature = feature;
+	public void setFeatureId(Long featureId) {
+		FeatureId = featureId;
 	}
 
-	public static class Feature {
+	public String getFeatureName() {
+		return featureName;
+	}
 
-		private Long FeatureId;
+	public void setFeatureName(String featureName) {
+		this.featureName = featureName;
+	}
 
-		private String featureName;
+	public String getStatus() {
+		return Status;
+	}
 
-		private String Status;
+	public void setStatus(String status) {
+		Status = status;
+	}
 
-		private Boolean isActive;
+	public Boolean getIsActive() {
+		return isActive;
+	}
 
-		public Long getFeatureId() {
-			return FeatureId;
-		}
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
 
-		public void setFeatureId(Long featureId) {
-			FeatureId = featureId;
-		}
+	public Timestamp getCreateDate() {
+		return createDate;
+	}
 
-		public String getFeatureName() {
-			return featureName;
-		}
-
-		public void setFeatureName(String featureName) {
-			this.featureName = featureName;
-		}
-
-		public String getStatus() {
-			return Status;
-		}
-
-		public void setStatus(String status) {
-			Status = status;
-		}
-
-		public Boolean getIsActive() {
-			return isActive;
-		}
-
-		public void setIsActive(Boolean isActive) {
-			this.isActive = isActive;
-		}
-
-		public Timestamp getCreateDate() {
-			return createDate;
-		}
-
-		public void setCreateDate(Timestamp createDate) {
-			this.createDate = createDate;
-		}
-
-		private Timestamp createDate;
-
+	public void setCreateDate(Timestamp createDate) {
+		this.createDate = createDate;
 	}
 
 }

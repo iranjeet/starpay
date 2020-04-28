@@ -11,13 +11,21 @@ public class ResponceUserDetails {
 
 	private String firstName, lastName, mobileNumber, status;
 	private String gender, companyName;
-	private Boolean isAdmin;
-	public Boolean isAdmin() {
+	private Boolean isAdmin,isPd0Rd1;
+	public Boolean getIsAdmin() {
 		return isAdmin;
 	}
 
-	public void setAdmin(Boolean isAdmin) {
+	public void setIsAdmin(Boolean isAdmin) {
 		this.isAdmin = isAdmin;
+	}
+
+	public Boolean getIsPd0Rd1() {
+		return isPd0Rd1;
+	}
+
+	public void setIsPd0Rd1(Boolean isPd0Rd1) {
+		this.isPd0Rd1 = isPd0Rd1;
 	}
 
 	private Set<Address> address=new HashSet<ResponceUserDetails.Address>();

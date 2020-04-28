@@ -19,8 +19,8 @@ public class Rd {
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long Id;
 	
-//	@OneToMany
-//	private Set<StarPayUser> starPayUser; 
+	@OneToMany
+	private Set<StarPayUser> starPayUser; 
 	@Column(name = "RdBusiness")
 	private String RdBusiness;
 	@Column(name = "CompanyName")
@@ -46,16 +46,10 @@ public class Rd {
 	@Column(name = "nationality")
 	private String nationality;
 	
-	@OneToMany
-	private Set<Address> address;
-
-	public Long getId() {
-		return Id;
-	}
-
-	public void setId(Long id) {
-		Id = id;
-	}
+//	@OneToMany
+//	private Set<Address> address;
+//
+	
 
 //	public Set<StarPayUser> getStarPayUser() {
 //		return starPayUser;
@@ -64,7 +58,13 @@ public class Rd {
 //	public void setStarPayUser(Set<StarPayUser> starPayUser) {
 //		this.starPayUser = starPayUser;
 //	}
+	public Long getId() {
+		return Id;
+	}
 
+	public void setId(Long id) {
+		Id = id;
+	}
 	public String getRdBusiness() {
 		return RdBusiness;
 	}
@@ -161,13 +161,13 @@ public class Rd {
 		this.nationality = nationality;
 	}
 
-	public Set<Address> getAddress() {
-		return address;
-	}
-
-	public void setAddress(Set<Address> address) {
-		this.address = address;
-	}
+//	public Set<Address> getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(Set<Address> address) {
+//		this.address = address;
+//	}
 	
 
 }

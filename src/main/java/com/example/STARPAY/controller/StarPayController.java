@@ -65,15 +65,44 @@ public class StarPayController {
 	// ------------Set Button feature------------------
 
 	@PostMapping("/SetButton")
-	public GenericResponse setButtonFeature(@RequestBody RequestAllFeature Id) {
+	public GenericResponse setButtonFeature(@RequestBody RequestRetailerFeature Id) {
 		return starService.setButtonFeature(Id);
 	}
 	
-	//-------------------------Set RD --------------------
-	@PostMapping("/setRd")
-	public GenericResponse setRd(@RequestBody RequestRd rd) {
-		return starService.setRd(rd);
-		
+	
+	
+	
+	
+	
+	
+	
+	//----------------Reusable methods------------------
+	void getPortalUserManagenment() {
+
 	}
+
+	void getEmoneyService() {
+
+	}
+
+	void getBillPaymentTransactions() {
+
+	}
+
+	void getEmoneySetlimit() {
+
+	}
+
+	void portalUserOptionHistory() {
+
+	}
+	
+	
+//	//-------------------------Set RD --------------------
+//	@PostMapping("/setRd")
+//	public GenericResponse setRd(@RequestBody RequestRd rd) {
+//		return starService.setRd(rd);
+//		
+//	}
 
 }

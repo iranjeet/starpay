@@ -26,20 +26,20 @@ public class RetailerFeature {
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long Id;
 
-	@Column(name = "FeatureId")
-	private Long FeatureId;
+//	@Column(name = "FeatureId")
+//	private Long FeatureId;
 
 	@Column(name = "featureName")
 	private String featureName;
 
 	@Column(name = "Status")
-	private String Status;
+	private String Status="Active";
 
 	@Column(name = "createDate")
 	private Timestamp createDate;
 
 	@Column(name = "isActive")
-	private Boolean isActive;
+	private Boolean isActive=true;
 
     @OneToMany(fetch = FetchType.LAZY,  cascade = CascadeType.ALL)//mappedBy = "r_feature",
 	private Set<Assn_User_Features> assn_User_Features=new TreeSet<Assn_User_Features>();
@@ -60,13 +60,13 @@ public class RetailerFeature {
 		this.assn_User_Features = assn_User_Features;
 	}
 
-	public Long getFeatureId() {
-		return FeatureId;
-	}
-
-	public void setFeatureId(Long featureId) {
-		FeatureId = featureId;
-	}
+//	public Long getFeatureId() {
+//		return FeatureId;
+//	}
+//
+//	public void setFeatureId(Long featureId) {
+//		FeatureId = featureId;
+//	}
 
 	public String getFeatureName() {
 		return featureName;
