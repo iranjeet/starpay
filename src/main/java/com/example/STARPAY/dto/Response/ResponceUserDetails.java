@@ -11,7 +11,10 @@ public class ResponceUserDetails {
 
 	private String firstName, lastName, mobileNumber, status;
 	private String gender, companyName;
-	private Boolean isAdmin,isPd0Rd1;
+	private Boolean isAdmin;
+	
+	private Set<Address> address=new HashSet<ResponceUserDetails.Address>();
+	
 	public Boolean getIsAdmin() {
 		return isAdmin;
 	}
@@ -20,15 +23,8 @@ public class ResponceUserDetails {
 		this.isAdmin = isAdmin;
 	}
 
-	public Boolean getIsPd0Rd1() {
-		return isPd0Rd1;
-	}
-
-	public void setIsPd0Rd1(Boolean isPd0Rd1) {
-		this.isPd0Rd1 = isPd0Rd1;
-	}
-
-	private Set<Address> address=new HashSet<ResponceUserDetails.Address>();
+	
+	
 	public Set<Address> getAddress() {
 		return address;
 	}
@@ -38,7 +34,7 @@ public class ResponceUserDetails {
 	}
 
 	public static class Address{
-		String fullAddress,zincode,province,city,addressType;
+		private String fullAddress,zipcode,province,city,addressType;
 
 		public String getFullAddress() {
 			return fullAddress;
@@ -48,12 +44,14 @@ public class ResponceUserDetails {
 			this.fullAddress = fullAddress;
 		}
 
-		public String getZincode() {
-			return zincode;
+	
+
+		public String getZipcode() {
+			return zipcode;
 		}
 
-		public void setZincode(String zincode) {
-			this.zincode = zincode;
+		public void setZipcode(String zipcode) {
+			this.zipcode = zipcode;
 		}
 
 		public String getProvince() {

@@ -1,10 +1,13 @@
 package com.example.STARPAY.domain;
 
+import java.sql.Timestamp;
 import java.util.*;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,12 +36,19 @@ public class StarPayUser {
 
 	@Column(name = "mobile_no")
 	private String mobileNumber;
+	
 
 	@Column(name = "status", columnDefinition = "varchar(255) default 'Active'")
 	private String status = "Active";
 
 	@Column(name = "isActive", columnDefinition = "tinyint(1) default 1")
 	private Boolean isActive = true;
+	
+	@Column(name = "createDate")
+	private final Timestamp createDate=new Timestamp(System.currentTimeMillis());
+	
+	@Column(name = "updatedDate")
+	private final Timestamp updatedDate=new Timestamp(System.currentTimeMillis());
 
 	@Column(name = "gender")
 	private String gender;
@@ -49,19 +59,72 @@ public class StarPayUser {
 	@Column(name = "isAdmin", columnDefinition = "tinyint(1) default 0")
 	private Boolean isAdmin = false;
 
-//	@Column(name = "pd_0_rd_1")
-//	private Boolean isPd0Rd1;
-	
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "retailerFeature", cascade = CascadeType.ALL) // mappedBy = "retailerFeature",
-	private Set<Assn_User_Features> retailerFearture;// =new TreeSet<Assn_User_Features>();
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
+	private Set<Address> address;
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "address",cascade = CascadeType.ALL) // mappedBy = "address",
-	@JoinColumn(name ="Id", referencedColumnName = "Id")
-	private Set<Address> address;// =new TreeSet<Address>();
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
+	private Set<EMoneyService> eMoneyService;
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
+	private Set<EMoneySetLimit> eMoneySetLimit;
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
+	private Set<PortalUserHistory> portalUserHistory;
+
+	@OneToMany(fetch = FetchType.LAZY,mappedBy = "starPayUser",cascade = CascadeType.ALL)
+	private Set<RetailerFeature> retailerFeature;
+	
+	@ManyToOne
+	@JoinColumn(name = "rd_id")
+	private Rd rd;
 
 	@ManyToOne
-	private Rd rd;
+	@JoinColumn(name = "pd_id")
+	private PD pd;
+	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")	
+	@Enumerated(EnumType.STRING)
+	private AccessType acess=AccessType.VIEW;
 	
+	public AccessType getAcess() {
+		return acess;
+	}
+
+	public void setAccess(AccessType acess) {
+		this.acess = acess;
+	}
+
+	public Set<PortalUserHistory> getPortalUserHistory() {
+		return portalUserHistory;
+	}
+
+	public void setPortalUserHistory(Set<PortalUserHistory> portalUserHistory) {
+		this.portalUserHistory = portalUserHistory;
+	}
+
+	public Set<EMoneySetLimit> geteMoneySetLimit() {
+		return eMoneySetLimit;
+	}
+
+	public void seteMoneySetLimit(Set<EMoneySetLimit> eMoneySetLimit) {
+		this.eMoneySetLimit = eMoneySetLimit;
+	}
+
+	public Set<EMoneyService> geteMoneyService() {
+		return eMoneyService;
+	}
+
+	public void seteMoneyService(Set<EMoneyService> eMoneyService) {
+		this.eMoneyService = eMoneyService;
+	}
+
+	public PD getPd() {
+		return pd;
+	}
+
+	public void setPd(PD pd) {
+		this.pd = pd;
+	}
+
 	public Rd getRd() {
 		return rd;
 	}
@@ -69,7 +132,7 @@ public class StarPayUser {
 	public void setRd(Rd rd) {
 		this.rd = rd;
 	}
-	
+
 	public Boolean getIsActive() {
 		return isActive;
 	}
@@ -86,8 +149,6 @@ public class StarPayUser {
 		this.isAdmin = isAdmin;
 	}
 
-	
-
 	public Set<Address> getAddress() {
 		return address;
 	}
@@ -95,8 +156,6 @@ public class StarPayUser {
 	public void setAddress(Set<Address> address) {
 		this.address = address;
 	}
-
-
 
 	public Long getId() {
 		return id;
@@ -152,14 +211,6 @@ public class StarPayUser {
 
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
-	}
-
-	public Set<Assn_User_Features> getRetailerFearture() {
-		return retailerFearture;
-	}
-
-	public void setRetailerFearture(Set<Assn_User_Features> retailerFearture) {
-		this.retailerFearture = retailerFearture;
 	}
 
 }

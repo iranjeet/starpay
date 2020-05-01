@@ -5,15 +5,40 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.example.STARPAY.domain.AccessType;
+
 public class RequestUserDetails {
 
 	private String firstName, lastName, mobileNumber, status;
 	private String gender, companyName;
 
-	String fullAddress,zipcode,province,city,addressType;
-	Long UserId;
+	private String fullAddress,zipcode,province,city,addressType;
+//	private Long UserId;
 	
-	private Set<Feature> feature = new TreeSet<RequestUserDetails.Feature>();
+	
+	
+	private AccessType userAccess,addressAccess;
+	
+	
+
+	public AccessType getUserAccess() {
+		return userAccess;
+	}
+
+	public void setUserAccess(AccessType userAccess) {
+		this.userAccess = userAccess;
+	}
+
+	public AccessType getAddressAccess() {
+		return addressAccess;
+	}
+
+	public void setAddressAccess(AccessType addressAccess) {
+		this.addressAccess = addressAccess;
+	}
+
+	
+//	private Set<Feature> feature = new TreeSet<RequestUserDetails.Feature>();
 	public String getFullAddress() {
 		return fullAddress;
 	}
@@ -54,13 +79,13 @@ public class RequestUserDetails {
 		this.addressType = addressType;
 	}
 
-	public Long getUserId() {
-		return UserId;
-	}
-
-	public void setUserId(Long userId) {
-		UserId = userId;
-	}
+//	public Long getUserId() {
+//		return UserId;
+//	}
+//
+//	public void setUserId(Long userId) {
+//		UserId = userId;
+//	}
 
 	
 
@@ -105,14 +130,14 @@ public class RequestUserDetails {
 			Status = status;
 		}
 	}
-
-	public Set<Feature> getFeature() {
-		return feature;
-	}
-
-	public void setFeature(Set<Feature> feature) {
-		this.feature = feature;
-	}
+//
+//	public Set<Feature> getFeature() {
+//		return feature;
+//	}
+//
+//	public void setFeature(Set<Feature> feature) {
+//		this.feature = feature;
+//	}
 
 	public String getFirstName() {
 		return firstName;

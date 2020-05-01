@@ -1,36 +1,32 @@
 package com.example.STARPAY.domain;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
-@Table(name = "eMoney_setLimit")
-public class EMoneySetLimit {
-	@javax.persistence.Id
-	@GeneratedValue(generator = "increment", strategy = GenerationType.AUTO)
+public class BillPaymentTransaction {
+	@Id
 	@GenericGenerator(name = "increment", strategy = "increment")
+	@GeneratedValue(generator = "increment", strategy = GenerationType.AUTO)
 	private Long Id;
 
-	@Column(name = "CanEdit", columnDefinition = "tinyint(0) default 0")
-	private Boolean canEdit=false;
+	@Column(name = "canEdit")
+	private Boolean canEdit;
 
 	@ManyToOne
-	@JoinColumn(name = "UserId")
+	@JoinColumn(name = "userId")
 	private StarPayUser starPayUser;
-	
-	
+	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
 	@Enumerated(EnumType.STRING)
 	private AccessType acess;
-	
+
 	public AccessType getAcess() {
 		return acess;
 	}

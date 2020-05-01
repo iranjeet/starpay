@@ -5,6 +5,8 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +19,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-@Table(name="Address")
+@Table(name = "Address")
 public class Address {
 
 	@Id
@@ -35,21 +37,24 @@ public class Address {
 	private String city;
 	@Column(name = "Type")
 	private String addressType;
+	@Column(name = "isActive", columnDefinition = "tinyint(1) default 1")
+	private Boolean isActive = true;
 
-	@ManyToOne
-//	@JoinColumn(name="user_id")
+	@ManyToOne // TODO 29-4-2020 11:45PM can remove the comment Jucst check for the user
+	@JoinColumn(name = "user_id")
 	private StarPayUser starPayUser;
-//
-//	@ManyToOne(optional = false)
-//	@JoinColumn(name="Id")
-//	private Rd rd;
+	@Enumerated(EnumType.STRING)
+	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
+	private AccessType acess=AccessType.VIEW;
+	
+	public AccessType getAcess() {
+		return acess;
+	}
 
-//	public Rd getRd() {
-//		return rd;
-//	}
-//	public void setRd(Rd rd) {
-//		this.rd = rd;
-//	}
+	public void setAcess(AccessType acess) {
+		this.acess = acess;
+	}
+
 
 	public Long getId() {
 		return Id;
@@ -106,7 +111,5 @@ public class Address {
 	public void setStarPayUser(StarPayUser starPayUser) {
 		this.starPayUser = starPayUser;
 	}
-
-	
 
 }

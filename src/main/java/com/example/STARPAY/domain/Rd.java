@@ -1,10 +1,15 @@
 package com.example.STARPAY.domain;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.*;
@@ -12,15 +17,13 @@ import java.util.*;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-@Table(name="Rd_user")
+@Table(name = "Rd_user")
 public class Rd {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "increment")
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long Id;
-	
-	@OneToMany
-	private Set<StarPayUser> starPayUser; 
+
 	@Column(name = "RdBusiness")
 	private String RdBusiness;
 	@Column(name = "CompanyName")
@@ -39,25 +42,46 @@ public class Rd {
 	private String mobile;
 	@Column(name = "gender")
 	private String gender;
-	@Column(name = "isActive")
-	private Boolean isActive;
+	@Column(name = "isActive", columnDefinition = "tinyint(1) default 1")
+	private Boolean isActive = true;
 	@Column(name = "birthplace")
 	private String birthPlace;
 	@Column(name = "nationality")
 	private String nationality;
-	
-//	@OneToMany
-//	private Set<Address> address;
-//
-	
+	@Column(name = "CanEdit", columnDefinition = "tinyint(0) default 0")
+	private Boolean canEdit=false;
 
-//	public Set<StarPayUser> getStarPayUser() {
-//		return starPayUser;
-//	}
-//
-//	public void setStarPayUser(Set<StarPayUser> starPayUser) {
-//		this.starPayUser = starPayUser;
-//	}
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rd", cascade = CascadeType.ALL) // mappedBy = is same name of the
+																					// mapped class Object naem
+	private Set<StarPayUser> starPayUser; // in this case private Rd rd; ->rd is used in mappbed by
+
+	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
+	@Enumerated(EnumType.STRING)
+	private AccessType acess;
+	
+	public AccessType getAcess() {
+		return acess;
+	}
+
+	public void setAcess(AccessType acess) {
+		this.acess = acess;
+	}
+	public Boolean getCanEdit() {
+		return canEdit;
+	}
+
+	public void setCanEdit(Boolean canEdit) {
+		this.canEdit = canEdit;
+	}
+
+	public Set<StarPayUser> getStarPayUser() {
+		return starPayUser;
+	}
+
+	public void setStarPayUser(Set<StarPayUser> starPayUser) {
+		this.starPayUser = starPayUser;
+	}
+
 	public Long getId() {
 		return Id;
 	}
@@ -65,6 +89,7 @@ public class Rd {
 	public void setId(Long id) {
 		Id = id;
 	}
+
 	public String getRdBusiness() {
 		return RdBusiness;
 	}
@@ -160,14 +185,5 @@ public class Rd {
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
-
-//	public Set<Address> getAddress() {
-//		return address;
-//	}
-//
-//	public void setAddress(Set<Address> address) {
-//		this.address = address;
-//	}
-	
 
 }

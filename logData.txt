@@ -1,0 +1,745 @@
+2020-05-01 16:08:47.345  INFO 8876 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : Starting StarpayRanjeetApplication on DESKTOP-PV3I44N with PID 8876 (D:\starpay\target\classes started by Ranjeet in D:\starpay)
+2020-05-01 16:08:47.350  INFO 8876 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : No active profile set, falling back to default profiles: default
+2020-05-01 16:08:48.357  INFO 8876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 16:08:48.387  INFO 8876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-05-01 16:08:49.102  INFO 8876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-05-01 16:08:49.111  INFO 8876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-01 16:08:49.112  INFO 8876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 16:08:49.313  INFO 8876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 16:08:49.313  INFO 8876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1897 ms
+2020-05-01 16:08:49.465  INFO 8876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: application]
+2020-05-01 16:08:49.537  INFO 8876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 16:08:49.653  INFO 8876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 16:08:49.675 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@637c840d
+2020-05-01 16:08:49.676 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@637c840d
+2020-05-01 16:08:49.676 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@637c840d
+2020-05-01 16:08:49.677 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7ccd611e
+2020-05-01 16:08:49.678 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@640d604
+2020-05-01 16:08:49.680 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@515ab3f2
+2020-05-01 16:08:49.682 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@5a9840f3
+2020-05-01 16:08:49.683 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@5a9840f3
+2020-05-01 16:08:49.683 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5a9840f3
+2020-05-01 16:08:49.685 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@1cd2ff5b
+2020-05-01 16:08:49.685 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@1cd2ff5b
+2020-05-01 16:08:49.685 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1cd2ff5b
+2020-05-01 16:08:49.687 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@14de1901
+2020-05-01 16:08:49.687 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@14de1901
+2020-05-01 16:08:49.687 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@14de1901
+2020-05-01 16:08:49.689 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@6a567f7b
+2020-05-01 16:08:49.690 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@6a567f7b
+2020-05-01 16:08:49.690 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6a567f7b
+2020-05-01 16:08:49.692 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6380e9e9
+2020-05-01 16:08:49.693 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@6380e9e9
+2020-05-01 16:08:49.693 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@6380e9e9
+2020-05-01 16:08:49.695 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@2589d787
+2020-05-01 16:08:49.695 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@2589d787
+2020-05-01 16:08:49.695 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2589d787
+2020-05-01 16:08:49.697 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@578a5ce8
+2020-05-01 16:08:49.697 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@578a5ce8
+2020-05-01 16:08:49.698 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@578a5ce8
+2020-05-01 16:08:49.701 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@71936a92
+2020-05-01 16:08:49.701 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@71936a92
+2020-05-01 16:08:49.703 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@d2708a7
+2020-05-01 16:08:49.703 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@d2708a7
+2020-05-01 16:08:49.704 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@1595d2b2
+2020-05-01 16:08:49.705 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@1595d2b2
+2020-05-01 16:08:49.705 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@37606fee
+2020-05-01 16:08:49.706 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@65cc5252
+2020-05-01 16:08:49.708 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@252ec02e
+2020-05-01 16:08:49.709 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@252ec02e
+2020-05-01 16:08:49.711 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@37c7766e
+2020-05-01 16:08:49.711 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@37c7766e
+2020-05-01 16:08:49.713 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@6094de13
+2020-05-01 16:08:49.713 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6094de13
+2020-05-01 16:08:49.714 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@681061d6
+2020-05-01 16:08:49.715 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@681061d6
+2020-05-01 16:08:49.717 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@64656b9e
+2020-05-01 16:08:49.717 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@64656b9e
+2020-05-01 16:08:49.719 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6314df3c
+2020-05-01 16:08:49.719 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6314df3c
+2020-05-01 16:08:49.721 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22791b75
+2020-05-01 16:08:49.721 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22791b75
+2020-05-01 16:08:49.722 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@53314f76
+2020-05-01 16:08:49.728 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@53314f76
+2020-05-01 16:08:49.730 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2725ca05
+2020-05-01 16:08:49.731 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2725ca05
+2020-05-01 16:08:49.734 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@7ac48e10
+2020-05-01 16:08:49.734 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@7ac48e10
+2020-05-01 16:08:49.735 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@7da1e005
+2020-05-01 16:08:49.735 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7da1e005
+2020-05-01 16:08:49.738 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@2b6fb197
+2020-05-01 16:08:49.738 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2b6fb197
+2020-05-01 16:08:49.738 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2b6fb197
+2020-05-01 16:08:49.740 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7d59e968
+2020-05-01 16:08:49.741 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@1c5d3a37
+2020-05-01 16:08:49.742 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1c5d3a37
+2020-05-01 16:08:49.742 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1c5d3a37
+2020-05-01 16:08:49.743 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4584304
+2020-05-01 16:08:49.744 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@1332dec4
+2020-05-01 16:08:49.747 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@5ec9eefa
+2020-05-01 16:08:49.747 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5ec9eefa
+2020-05-01 16:08:49.748 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@6b8b5020
+2020-05-01 16:08:49.748 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6b8b5020
+2020-05-01 16:08:49.749 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6750e381
+2020-05-01 16:08:49.749 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6750e381
+2020-05-01 16:08:49.751 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@29bbc391
+2020-05-01 16:08:49.751 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@29bbc391
+2020-05-01 16:08:49.752 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@21b51e59
+2020-05-01 16:08:49.752 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@21b51e59
+2020-05-01 16:08:49.753 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4f664bee
+2020-05-01 16:08:49.763 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@3457cc8d
+2020-05-01 16:08:49.764 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@3457cc8d
+2020-05-01 16:08:49.764 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@3457cc8d
+2020-05-01 16:08:49.767 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@682e422c
+2020-05-01 16:08:49.768 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@682e422c
+2020-05-01 16:08:49.768 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@682e422c
+2020-05-01 16:08:49.770 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@5b48f0f4
+2020-05-01 16:08:49.773 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@3bbf1c0d
+2020-05-01 16:08:49.775 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@656842bc
+2020-05-01 16:08:49.776 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@656842bc
+2020-05-01 16:08:49.776 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@656842bc
+2020-05-01 16:08:49.778 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2055833f
+2020-05-01 16:08:49.778 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2055833f
+2020-05-01 16:08:49.778 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2055833f
+2020-05-01 16:08:49.779 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@18ffca6c
+2020-05-01 16:08:49.780 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@52ecc989
+2020-05-01 16:08:49.785 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@28b523a
+2020-05-01 16:08:49.785 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@28b523a
+2020-05-01 16:08:49.785 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2997ddfc
+2020-05-01 16:08:49.787 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@72a8361b
+2020-05-01 16:08:49.787 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@72a8361b
+2020-05-01 16:08:49.788 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@7a64cb0c
+2020-05-01 16:08:49.789 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7a64cb0c
+2020-05-01 16:08:49.789 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@29bbc63c
+2020-05-01 16:08:49.791 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@743c3520
+2020-05-01 16:08:49.795 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@3f5dfe69
+2020-05-01 16:08:49.798 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@231df705
+2020-05-01 16:08:49.805 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@231df705
+2020-05-01 16:08:49.807 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@55296b50
+2020-05-01 16:08:49.807 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@60591e1b
+2020-05-01 16:08:49.807 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@29c53c4f
+2020-05-01 16:08:49.807 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3009eed7
+2020-05-01 16:08:49.807 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2ee4706d
+2020-05-01 16:08:49.819 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6650a6c
+2020-05-01 16:08:49.820 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@64279ab
+2020-05-01 16:08:49.820 DEBUG 8876 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@794240e2
+2020-05-01 16:08:49.932  INFO 8876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-01 16:08:50.064  WARN 8876 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-01 16:08:50.265  INFO 8876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-01 16:08:50.284  INFO 8876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-01 16:08:50.359 DEBUG 8876 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5beb6be2] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2d6a0766]
+2020-05-01 16:08:50.638 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.640 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.641 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.643 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.644 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.645 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.646 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.647 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.647 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.647 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.704 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.708 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.709 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.711 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.712 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.713 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.714 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.714 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.715 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.715 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:50.929 DEBUG 8876 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5beb6be2] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@495da9a7]
+2020-05-01 16:08:51.023 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.023 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.306 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.306 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.325 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.330 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.385 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.386 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.388 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.388 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.418 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.418 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.423 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.424 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.500 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.501 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.504 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.504 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.524 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.524 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.525 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.526 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.545 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.545 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.547 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.547 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.571 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.572 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.573 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.573 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.593 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.593 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.603 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.603 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.609 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.610 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.611 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.611 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.622 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.622 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.731 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.731 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.737 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.737 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.738 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.738 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.739 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.739 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.740 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.741 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.741 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.741 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.742 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.743 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.744 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.744 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.745 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.745 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.745 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:51.746 DEBUG 8876 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 16:08:52.414  INFO 8876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 16:08:52.420 TRACE 8876 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@495da9a7] for TypeConfiguration
+2020-05-01 16:08:52.422  INFO 8876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 16:08:52.764  WARN 8876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-01 16:08:52.947  INFO 8876 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-01 16:08:53.102  INFO 8876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 16:08:53.298  INFO 8876 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-01 16:08:53.316  INFO 8876 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-01 16:08:53.354  INFO 8876 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-01 16:08:53.875  INFO 8876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-05-01 16:08:53.879  INFO 8876 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : Started StarpayRanjeetApplication in 6.954 seconds (JVM running for 8.202)
+2020-05-01 16:09:39.044  INFO 8876 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 16:09:39.044  INFO 8876 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-01 16:09:39.059  INFO 8876 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-05-01 16:09:56.366 DEBUG 8876 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select max(Id) from StarPay_user
+2020-05-01 16:09:56.400 DEBUG 8876 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : insert into StarPay_user (acess, company_name, createDate, firstName, gender, isActive, isAdmin, lastName, mobile_no, pd_id, rd_id, status, updatedDate, Id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-05-01 16:09:56.407 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [EDIT]
+2020-05-01 16:09:56.408 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [string]
+2020-05-01 16:09:56.409 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2020-05-01 16:09:56.344]
+2020-05-01 16:09:56.413 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [string]
+2020-05-01 16:09:56.413 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [string]
+2020-05-01 16:09:56.414 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BOOLEAN] - [true]
+2020-05-01 16:09:56.414 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BOOLEAN] - [false]
+2020-05-01 16:09:56.415 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [string]
+2020-05-01 16:09:56.415 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [VARCHAR] - [string]
+2020-05-01 16:09:56.415 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [10] as [BIGINT] - [null]
+2020-05-01 16:09:56.415 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [11] as [BIGINT] - [null]
+2020-05-01 16:09:56.416 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [12] as [VARCHAR] - [Active]
+2020-05-01 16:09:56.416 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [13] as [TIMESTAMP] - [2020-05-01 16:09:56.344]
+2020-05-01 16:09:56.416 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [14] as [BIGINT] - [7]
+2020-05-01 16:09:56.447  INFO 8876 --- [http-nio-8888-exec-1] c.e.STARPAY.services.StarPayService      : User Added sucessfully
+2020-05-01 16:09:56.452 DEBUG 8876 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : select max(Id) from Address
+2020-05-01 16:09:56.454 DEBUG 8876 --- [http-nio-8888-exec-1] org.hibernate.SQL                        : insert into Address (acess, Type, city, full_address, isActive, province, user_id, zip_code, Id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-05-01 16:09:56.455 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [EDIT]
+2020-05-01 16:09:56.455 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [string]
+2020-05-01 16:09:56.455 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [string]
+2020-05-01 16:09:56.455 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [string]
+2020-05-01 16:09:56.455 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BOOLEAN] - [true]
+2020-05-01 16:09:56.456 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [string]
+2020-05-01 16:09:56.456 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [7]
+2020-05-01 16:09:56.456 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [VARCHAR] - [string]
+2020-05-01 16:09:56.456 TRACE 8876 --- [http-nio-8888-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [9] as [BIGINT] - [7]
+2020-05-01 16:09:56.457  INFO 8876 --- [http-nio-8888-exec-1] c.e.STARPAY.services.StarPayService      : User-Address Added sucessfully
+2020-05-01 16:23:12.388  INFO 8876 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-01 16:23:12.393  INFO 8876 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 16:23:12.399  INFO 8876 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 16:23:12.400 TRACE 8876 --- [RMI TCP Connection(4)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@495da9a7] for TypeConfiguration
+2020-05-01 16:23:12.400 DEBUG 8876 --- [RMI TCP Connection(4)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@59a4cf50] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@495da9a7]
+2020-05-01 16:23:12.403  INFO 8876 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-01 16:23:12.423  INFO 8876 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-01 22:36:07.424  INFO 11540 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : Starting StarpayRanjeetApplication on DESKTOP-PV3I44N with PID 11540 (D:\starpay\target\classes started by Ranjeet in D:\starpay)
+2020-05-01 22:36:07.469  INFO 11540 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : No active profile set, falling back to default profiles: default
+2020-05-01 22:36:08.500  INFO 11540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 22:36:08.544  INFO 11540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-05-01 22:36:09.674  INFO 11540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-05-01 22:36:09.687  INFO 11540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-01 22:36:09.688  INFO 11540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 22:36:10.078  INFO 11540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 22:36:10.078  INFO 11540 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2547 ms
+2020-05-01 22:36:11.403  INFO 11540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: application]
+2020-05-01 22:36:14.613  INFO 11540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 22:36:16.461  INFO 11540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 22:36:16.512 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@6d69a0d3
+2020-05-01 22:36:16.513 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@6d69a0d3
+2020-05-01 22:36:16.514 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6d69a0d3
+2020-05-01 22:36:16.515 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1f916219
+2020-05-01 22:36:16.516 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@611d0763
+2020-05-01 22:36:16.518 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@2322e56f
+2020-05-01 22:36:16.521 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7c588adc
+2020-05-01 22:36:16.522 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7c588adc
+2020-05-01 22:36:16.522 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7c588adc
+2020-05-01 22:36:16.524 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@492521c4
+2020-05-01 22:36:16.524 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@492521c4
+2020-05-01 22:36:16.525 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@492521c4
+2020-05-01 22:36:16.526 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@2a0b901c
+2020-05-01 22:36:16.527 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@2a0b901c
+2020-05-01 22:36:16.527 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2a0b901c
+2020-05-01 22:36:16.529 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@22f02996
+2020-05-01 22:36:16.529 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@22f02996
+2020-05-01 22:36:16.530 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@22f02996
+2020-05-01 22:36:16.531 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@5d194314
+2020-05-01 22:36:16.532 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@5d194314
+2020-05-01 22:36:16.532 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@5d194314
+2020-05-01 22:36:16.535 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4dc52559
+2020-05-01 22:36:16.535 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4dc52559
+2020-05-01 22:36:16.535 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4dc52559
+2020-05-01 22:36:16.545 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@515ab3f2
+2020-05-01 22:36:16.545 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@515ab3f2
+2020-05-01 22:36:16.545 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@515ab3f2
+2020-05-01 22:36:16.547 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5fef0c19
+2020-05-01 22:36:16.548 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5fef0c19
+2020-05-01 22:36:16.554 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@34a20f16
+2020-05-01 22:36:16.554 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@34a20f16
+2020-05-01 22:36:16.556 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@67b61834
+2020-05-01 22:36:16.556 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@67b61834
+2020-05-01 22:36:16.562 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@437ed416
+2020-05-01 22:36:16.563 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5cfed0ba
+2020-05-01 22:36:16.565 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@367d34c0
+2020-05-01 22:36:16.566 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@367d34c0
+2020-05-01 22:36:16.568 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@8b13d91
+2020-05-01 22:36:16.568 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@8b13d91
+2020-05-01 22:36:16.570 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@5657967b
+2020-05-01 22:36:16.571 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5657967b
+2020-05-01 22:36:16.572 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6de43bc1
+2020-05-01 22:36:16.573 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6de43bc1
+2020-05-01 22:36:16.575 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6222391a
+2020-05-01 22:36:16.575 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6222391a
+2020-05-01 22:36:16.576 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@12abcd1e
+2020-05-01 22:36:16.576 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@12abcd1e
+2020-05-01 22:36:16.577 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@33d28f0a
+2020-05-01 22:36:16.578 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@33d28f0a
+2020-05-01 22:36:16.579 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@41aebbb4
+2020-05-01 22:36:16.579 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@41aebbb4
+2020-05-01 22:36:16.603 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@34279b8a
+2020-05-01 22:36:16.604 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@34279b8a
+2020-05-01 22:36:16.606 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@2bd8f7db
+2020-05-01 22:36:16.607 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@2bd8f7db
+2020-05-01 22:36:16.608 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@2dd178f3
+2020-05-01 22:36:16.609 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2dd178f3
+2020-05-01 22:36:16.610 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@10b8b900
+2020-05-01 22:36:16.610 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@10b8b900
+2020-05-01 22:36:16.610 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@10b8b900
+2020-05-01 22:36:16.612 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@599f1b7
+2020-05-01 22:36:16.613 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@70881123
+2020-05-01 22:36:16.614 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@70881123
+2020-05-01 22:36:16.614 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@70881123
+2020-05-01 22:36:16.615 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1a914089
+2020-05-01 22:36:16.616 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@6459f4ea
+2020-05-01 22:36:16.617 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@342ee097
+2020-05-01 22:36:16.618 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@342ee097
+2020-05-01 22:36:16.619 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@7da1e005
+2020-05-01 22:36:16.619 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7da1e005
+2020-05-01 22:36:16.620 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@79df80a4
+2020-05-01 22:36:16.621 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@79df80a4
+2020-05-01 22:36:16.622 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@7d59e968
+2020-05-01 22:36:16.623 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7d59e968
+2020-05-01 22:36:16.624 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@132e3594
+2020-05-01 22:36:16.624 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@132e3594
+2020-05-01 22:36:16.625 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7e3d2ebd
+2020-05-01 22:36:16.626 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@5fb3111a
+2020-05-01 22:36:16.626 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@5fb3111a
+2020-05-01 22:36:16.626 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@5fb3111a
+2020-05-01 22:36:16.627 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@26da1ba2
+2020-05-01 22:36:16.627 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@26da1ba2
+2020-05-01 22:36:16.628 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@26da1ba2
+2020-05-01 22:36:16.629 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@33e4b9c4
+2020-05-01 22:36:16.632 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@7d37ee0c
+2020-05-01 22:36:16.634 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@5d850a25
+2020-05-01 22:36:16.634 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@5d850a25
+2020-05-01 22:36:16.634 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@5d850a25
+2020-05-01 22:36:16.635 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3487442d
+2020-05-01 22:36:16.636 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3487442d
+2020-05-01 22:36:16.636 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3487442d
+2020-05-01 22:36:16.637 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@43c7fe8a
+2020-05-01 22:36:16.638 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@6b4a4e40
+2020-05-01 22:36:16.670 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@5d1bdd4a
+2020-05-01 22:36:16.670 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5d1bdd4a
+2020-05-01 22:36:16.671 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7994a0d1
+2020-05-01 22:36:16.672 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@747f6c5a
+2020-05-01 22:36:16.672 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@747f6c5a
+2020-05-01 22:36:16.689 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@21e5f0b6
+2020-05-01 22:36:16.690 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@21e5f0b6
+2020-05-01 22:36:16.691 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6b867ee7
+2020-05-01 22:36:16.693 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5939e24
+2020-05-01 22:36:16.715 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@52f8a6f4
+2020-05-01 22:36:16.722 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@34edd065
+2020-05-01 22:36:16.723 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@34edd065
+2020-05-01 22:36:16.725 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@44dfdd58
+2020-05-01 22:36:16.726 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@58d4238e
+2020-05-01 22:36:16.727 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@72a8361b
+2020-05-01 22:36:16.727 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@36478bce
+2020-05-01 22:36:16.728 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@c48b543
+2020-05-01 22:36:16.728 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@75793f17
+2020-05-01 22:36:16.729 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4652c74d
+2020-05-01 22:36:16.729 DEBUG 11540 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4cc12db2
+2020-05-01 22:36:16.979  INFO 11540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-01 22:36:17.342  WARN 11540 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-01 22:36:19.286  INFO 11540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-01 22:36:19.345  INFO 11540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-01 22:36:22.201 DEBUG 11540 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@690df641] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7db791df]
+2020-05-01 22:36:23.789 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.790 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.791 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.791 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.791 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.792 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.792 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.792 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.793 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:23.793 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.185 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.226 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.227 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.228 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.228 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.229 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.230 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.231 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.231 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.231 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:24.959 DEBUG 11540 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@690df641] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@39514976]
+2020-05-01 22:36:25.038 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.038 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.399 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.399 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.444 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.444 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.467 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.468 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.470 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.471 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.482 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.483 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.484 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.484 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.535 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.536 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.539 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.539 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.560 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.561 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.562 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.562 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.575 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.576 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.577 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.578 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.602 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.602 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.604 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.604 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.616 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.617 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.632 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.633 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.642 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.642 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.643 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.643 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.657 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.657 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.863 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.863 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.868 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.868 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.869 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.869 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.870 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.870 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.871 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.871 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.872 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.872 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.873 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.873 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.874 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.874 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.875 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.876 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.876 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:25.876 DEBUG 11540 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:36:27.800  INFO 11540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 22:36:27.875 TRACE 11540 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@39514976] for TypeConfiguration
+2020-05-01 22:36:27.880  INFO 11540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 22:36:28.243  WARN 11540 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starPayController': Unsatisfied dependency expressed through field 'starService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starPayService': Unsatisfied dependency expressed through field 'bayaditoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.STARPAY.dao.BayaditoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-01 22:36:28.243  INFO 11540 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 22:36:28.243 TRACE 11540 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@39514976] for TypeConfiguration
+2020-05-01 22:36:28.243 DEBUG 11540 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@17034458] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@39514976]
+2020-05-01 22:36:28.246  INFO 11540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-01 22:36:28.289  INFO 11540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-01 22:36:28.295  INFO 11540 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-01 22:36:28.394  INFO 11540 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-01 22:36:28.643 ERROR 11540 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bayaditoDao in com.example.STARPAY.services.StarPayService required a bean of type 'com.example.STARPAY.dao.BayaditoDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.STARPAY.dao.BayaditoDao' in your configuration.
+
+2020-05-01 22:38:34.209  INFO 5956 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : Starting StarpayRanjeetApplication on DESKTOP-PV3I44N with PID 5956 (D:\starpay\target\classes started by Ranjeet in D:\starpay)
+2020-05-01 22:38:34.214  INFO 5956 --- [main] c.e.STARPAY.StarpayRanjeetApplication    : No active profile set, falling back to default profiles: default
+2020-05-01 22:38:35.383  INFO 5956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-01 22:38:35.408  INFO 5956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-05-01 22:38:36.465  INFO 5956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-05-01 22:38:36.480  INFO 5956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-01 22:38:36.481  INFO 5956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 22:38:36.617  INFO 5956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 22:38:36.618  INFO 5956 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2344 ms
+2020-05-01 22:38:36.794  INFO 5956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: application]
+2020-05-01 22:38:36.867  INFO 5956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-01 22:38:36.993  INFO 5956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-01 22:38:37.016 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@75882261
+2020-05-01 22:38:37.016 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@75882261
+2020-05-01 22:38:37.016 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@75882261
+2020-05-01 22:38:37.017 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2a8dd942
+2020-05-01 22:38:37.018 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@7c70aae1
+2020-05-01 22:38:37.019 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@372f0a99
+2020-05-01 22:38:37.022 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@492521c4
+2020-05-01 22:38:37.022 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@492521c4
+2020-05-01 22:38:37.022 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@492521c4
+2020-05-01 22:38:37.024 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@2a0b901c
+2020-05-01 22:38:37.024 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@2a0b901c
+2020-05-01 22:38:37.024 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2a0b901c
+2020-05-01 22:38:37.026 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@22f02996
+2020-05-01 22:38:37.027 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@22f02996
+2020-05-01 22:38:37.027 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@22f02996
+2020-05-01 22:38:37.029 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@5d194314
+2020-05-01 22:38:37.029 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@5d194314
+2020-05-01 22:38:37.029 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5d194314
+2020-05-01 22:38:37.030 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4dc52559
+2020-05-01 22:38:37.031 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4dc52559
+2020-05-01 22:38:37.031 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@4dc52559
+2020-05-01 22:38:37.032 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@515ab3f2
+2020-05-01 22:38:37.033 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@515ab3f2
+2020-05-01 22:38:37.033 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@515ab3f2
+2020-05-01 22:38:37.034 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5fef0c19
+2020-05-01 22:38:37.034 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5fef0c19
+2020-05-01 22:38:37.034 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5fef0c19
+2020-05-01 22:38:37.035 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@34a20f16
+2020-05-01 22:38:37.036 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@34a20f16
+2020-05-01 22:38:37.037 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@67b61834
+2020-05-01 22:38:37.038 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@67b61834
+2020-05-01 22:38:37.039 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@691567ea
+2020-05-01 22:38:37.039 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@691567ea
+2020-05-01 22:38:37.040 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@28be7fec
+2020-05-01 22:38:37.041 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@367d34c0
+2020-05-01 22:38:37.042 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@8b13d91
+2020-05-01 22:38:37.042 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@8b13d91
+2020-05-01 22:38:37.044 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@5657967b
+2020-05-01 22:38:37.044 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5657967b
+2020-05-01 22:38:37.045 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@6de43bc1
+2020-05-01 22:38:37.046 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6de43bc1
+2020-05-01 22:38:37.047 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6222391a
+2020-05-01 22:38:37.048 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6222391a
+2020-05-01 22:38:37.049 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@12abcd1e
+2020-05-01 22:38:37.050 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@12abcd1e
+2020-05-01 22:38:37.051 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@33d28f0a
+2020-05-01 22:38:37.051 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@33d28f0a
+2020-05-01 22:38:37.053 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41aebbb4
+2020-05-01 22:38:37.053 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41aebbb4
+2020-05-01 22:38:37.054 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@34279b8a
+2020-05-01 22:38:37.058 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@34279b8a
+2020-05-01 22:38:37.059 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6f91fbda
+2020-05-01 22:38:37.060 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6f91fbda
+2020-05-01 22:38:37.062 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@69a40b3c
+2020-05-01 22:38:37.062 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@69a40b3c
+2020-05-01 22:38:37.063 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@2dfa02c1
+2020-05-01 22:38:37.064 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2dfa02c1
+2020-05-01 22:38:37.065 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@37d28938
+2020-05-01 22:38:37.065 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@37d28938
+2020-05-01 22:38:37.065 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@37d28938
+2020-05-01 22:38:37.067 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4837f97e
+2020-05-01 22:38:37.068 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@1a914089
+2020-05-01 22:38:37.069 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1a914089
+2020-05-01 22:38:37.069 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1a914089
+2020-05-01 22:38:37.070 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6459f4ea
+2020-05-01 22:38:37.071 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@342ee097
+2020-05-01 22:38:37.073 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@7da1e005
+2020-05-01 22:38:37.073 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7da1e005
+2020-05-01 22:38:37.074 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@79df80a4
+2020-05-01 22:38:37.074 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@79df80a4
+2020-05-01 22:38:37.075 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@7d59e968
+2020-05-01 22:38:37.076 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7d59e968
+2020-05-01 22:38:37.078 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@132e3594
+2020-05-01 22:38:37.078 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@132e3594
+2020-05-01 22:38:37.080 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4f3356c0
+2020-05-01 22:38:37.080 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4f3356c0
+2020-05-01 22:38:37.081 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@51888019
+2020-05-01 22:38:37.082 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@26da1ba2
+2020-05-01 22:38:37.083 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@26da1ba2
+2020-05-01 22:38:37.083 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@26da1ba2
+2020-05-01 22:38:37.084 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@33e4b9c4
+2020-05-01 22:38:37.085 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@33e4b9c4
+2020-05-01 22:38:37.085 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@33e4b9c4
+2020-05-01 22:38:37.086 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@7739aac4
+2020-05-01 22:38:37.087 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@5d850a25
+2020-05-01 22:38:37.088 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@3487442d
+2020-05-01 22:38:37.088 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@3487442d
+2020-05-01 22:38:37.089 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@3487442d
+2020-05-01 22:38:37.090 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1785d194
+2020-05-01 22:38:37.090 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1785d194
+2020-05-01 22:38:37.090 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1785d194
+2020-05-01 22:38:37.091 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@76563ae7
+2020-05-01 22:38:37.091 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@75e80a97
+2020-05-01 22:38:37.092 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@4137aab0
+2020-05-01 22:38:37.093 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4137aab0
+2020-05-01 22:38:37.094 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2726a511
+2020-05-01 22:38:37.096 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@19662208
+2020-05-01 22:38:37.096 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@19662208
+2020-05-01 22:38:37.097 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@5dbab232
+2020-05-01 22:38:37.097 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5dbab232
+2020-05-01 22:38:37.107 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@28768e25
+2020-05-01 22:38:37.108 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@46468f0
+2020-05-01 22:38:37.111 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@6f1fa1d0
+2020-05-01 22:38:37.114 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@36478bce
+2020-05-01 22:38:37.114 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@36478bce
+2020-05-01 22:38:37.115 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4cc12db2
+2020-05-01 22:38:37.115 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5ea7bc4
+2020-05-01 22:38:37.115 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@39d77de9
+2020-05-01 22:38:37.115 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@696fad31
+2020-05-01 22:38:37.116 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2c06b113
+2020-05-01 22:38:37.116 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7a64cb0c
+2020-05-01 22:38:37.116 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@785ed99c
+2020-05-01 22:38:37.116 DEBUG 5956 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6c4ce583
+2020-05-01 22:38:37.228  INFO 5956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-01 22:38:37.335  WARN 5956 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-01 22:38:37.770  INFO 5956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-01 22:38:37.798  INFO 5956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-01 22:38:38.200 DEBUG 5956 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a2b7a35] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@58186f9f]
+2020-05-01 22:38:38.386 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.388 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.388 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.388 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.389 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.389 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.390 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.390 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.391 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.391 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.436 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.440 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.441 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.442 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.442 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.443 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.444 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.445 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.445 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.446 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.561 DEBUG 5956 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2a2b7a35] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@22899683]
+2020-05-01 22:38:38.600 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.600 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.786 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.786 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.797 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.798 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.823 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.824 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.825 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.827 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.842 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.842 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.845 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.845 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.885 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.886 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.889 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.889 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.911 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.911 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.913 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.913 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.933 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.933 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.934 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.935 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.956 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.956 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.958 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.958 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.969 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.969 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.981 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.982 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.988 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.988 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.989 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:38.989 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.003 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.004 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.185 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.185 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.191 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.191 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.192 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.194 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.195 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.195 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.197 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.197 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.198 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.198 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.199 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.200 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.201 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.201 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.202 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.203 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.204 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:39.204 DEBUG 5956 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum com.example.STARPAY.domain.AccessType
+2020-05-01 22:38:40.502  INFO 5956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-01 22:38:40.508 TRACE 5956 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@22899683] for TypeConfiguration
+2020-05-01 22:38:40.510  INFO 5956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 22:38:40.588  WARN 5956 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starPayController': Unsatisfied dependency expressed through field 'starService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'starPayService': Unsatisfied dependency expressed through field 'bayaditoDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.STARPAY.dao.BayaditoDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-01 22:38:40.589  INFO 5956 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'application'
+2020-05-01 22:38:40.589 TRACE 5956 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@22899683] for TypeConfiguration
+2020-05-01 22:38:40.589 DEBUG 5956 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@45753c22] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@22899683]
+2020-05-01 22:38:40.591  INFO 5956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-01 22:38:40.603  INFO 5956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-01 22:38:40.607  INFO 5956 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-01 22:38:40.627  INFO 5956 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-01 22:38:40.758 ERROR 5956 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bayaditoDao in com.example.STARPAY.services.StarPayService required a bean of type 'com.example.STARPAY.dao.BayaditoDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.STARPAY.dao.BayaditoDao' in your configuration.
+

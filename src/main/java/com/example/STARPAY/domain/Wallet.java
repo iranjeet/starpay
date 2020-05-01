@@ -4,6 +4,8 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -30,10 +32,23 @@ public class Wallet {
 	@JoinColumn(name="userId")
 	private StarPayUser starPayUser;
 	
-	
 	@OneToMany
 	@JoinColumn(name="walletid")
 	private Set<Assn_User_Wallet> assn_User_Wallets;
+	
+	@Enumerated(EnumType.STRING)
+	private AccessType acess;
+	
+	public AccessType getAcess() {
+		return acess;
+	}
+
+	public void setAcess(AccessType acess) {
+		this.acess = acess;
+	}
+	
+	
+	
 
 
 	public Long getId() {

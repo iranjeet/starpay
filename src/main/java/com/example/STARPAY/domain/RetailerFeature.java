@@ -1,21 +1,27 @@
 package com.example.STARPAY.domain;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.TreeSet;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Table(name="retailerFeatures")
@@ -28,7 +34,7 @@ public class RetailerFeature {
 
 //	@Column(name = "FeatureId")
 //	private Long FeatureId;
-
+	
 	@Column(name = "featureName")
 	private String featureName;
 
@@ -36,13 +42,28 @@ public class RetailerFeature {
 	private String Status="Active";
 
 	@Column(name = "createDate")
-	private Timestamp createDate;
+	private Timestamp createDate=new Timestamp(System.currentTimeMillis());
 
 	@Column(name = "isActive")
 	private Boolean isActive=true;
+	
+	@ManyToOne
+	@JoinColumn(name="UserId")
+	private StarPayUser starPayUser;
+	
+//    @OneToMany(fetch = FetchType.LAZY,  cascade = CascadeType.ALL)//mappedBy = "r_feature",
+//	private Set<Assn_User_Features> assn_User_Features=new TreeSet<Assn_User_Features>();
+	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW' ")
+	@Enumerated(EnumType.STRING)
+	private AccessType acess;
+	
+	public AccessType getAcess() {
+		return acess;
+	}
 
-    @OneToMany(fetch = FetchType.LAZY,  cascade = CascadeType.ALL)//mappedBy = "r_feature",
-	private Set<Assn_User_Features> assn_User_Features=new TreeSet<Assn_User_Features>();
+	public void setAcess(AccessType acess) {
+		this.acess = acess;
+	}
 
 	public Long getId() {
 		return Id;
@@ -52,13 +73,13 @@ public class RetailerFeature {
 		Id = id;
 	}
 
-	public Set<Assn_User_Features> getAssn_User_Features() {
-		return assn_User_Features;
-	}
-
-	public void setAssn_User_Features(Set<Assn_User_Features> assn_User_Features) {
-		this.assn_User_Features = assn_User_Features;
-	}
+//	public Set<Assn_User_Features> getAssn_User_Features() {
+//		return assn_User_Features;
+//	}
+//
+//	public void setAssn_User_Features(Set<Assn_User_Features> assn_User_Features) {
+//		this.assn_User_Features = assn_User_Features;
+//	}
 
 //	public Long getFeatureId() {
 //		return FeatureId;
