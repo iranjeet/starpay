@@ -138,13 +138,19 @@ public class StarPayService {
 		PortalUserHistory portalUserHistory = new PortalUserHistory();
 		Rd rd = new Rd();
 		Wallet wallet = new Wallet();
+		if(req.getRdAccess()!=null)
 		rd.setAcess(req.getRdAccess());
+		if(req.getPdAccess()!=null)
 		pd.setAcess(req.getPdAccess());
+		if(req.getPortalUserHistoryAccess()!=null)
 		portalUserHistory.setAcess(req.getPortalUserHistoryAccess());
-		pd.setAcess(req.getPdAccess());
+		if(req.getWalletAccess()!=null)
 		wallet.setAcess(req.getWalletAccess());
+		if(req.geteMoneyServiceAccess()!=null)
 		eMoneyService.setAcess(req.geteMoneyServiceAccess());
+		if(req.geteMoneySetLimitAccess()!=null)
 		eMoneySetLimit.setAcess(req.geteMoneySetLimitAccess());
+		if(req.getBillPaymentAccess()!=null)
 		billPaymentTransaction.setAcess(req.getBillPaymentAccess());
 //		bayadito.setAcess(req.getBayaditoAccess());//TODO as the Domain mapping is not set anywhere for bayadito 
 		user.setFirstName(req.getFirstName());
