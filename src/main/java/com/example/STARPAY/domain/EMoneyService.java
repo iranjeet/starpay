@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.example.STARPAY.domain.AccessType;
+
 @Entity
 @Table(name = "EMoney_service")
 public class EMoneyService {
@@ -29,8 +31,8 @@ public class EMoneyService {
 	@ManyToOne
 	@JoinColumn(name = "UserId")
 	private StarPayUser starPayUser;
-	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
 	@Enumerated(EnumType.STRING)
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
 	private AccessType acess=AccessType.VIEW;
 	
 	public AccessType getAcess() {

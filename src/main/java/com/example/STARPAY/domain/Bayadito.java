@@ -21,9 +21,10 @@ public class Bayadito {
 	private Long Id;
 	
 	
-	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
 	@Enumerated(EnumType.STRING)
-	private AccessType acess;
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
+	private AccessType acess=AccessType.VIEW;
+	
 	
 	public AccessType getAcess() {
 		return acess;

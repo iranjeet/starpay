@@ -36,19 +36,18 @@ public class StarPayUser {
 
 	@Column(name = "mobile_no")
 	private String mobileNumber;
-	
 
 	@Column(name = "status", columnDefinition = "varchar(255) default 'Active'")
 	private String status = "Active";
 
 	@Column(name = "isActive", columnDefinition = "tinyint(1) default 1")
 	private Boolean isActive = true;
-	
+
 	@Column(name = "createDate")
-	private final Timestamp createDate=new Timestamp(System.currentTimeMillis());
-	
+	private final Timestamp createDate = new Timestamp(System.currentTimeMillis());
+
 	@Column(name = "updatedDate")
-	private final Timestamp updatedDate=new Timestamp(System.currentTimeMillis());
+	private final Timestamp updatedDate = new Timestamp(System.currentTimeMillis());
 
 	@Column(name = "gender")
 	private String gender;
@@ -71,9 +70,11 @@ public class StarPayUser {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
 	private Set<PortalUserHistory> portalUserHistory;
 
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "starPayUser",cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
 	private Set<RetailerFeature> retailerFeature;
-	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "starPayUser", cascade = CascadeType.ALL)
+	private Set<BillPaymentTransaction> billPaymentTransaction;
+
 	@ManyToOne
 	@JoinColumn(name = "rd_id")
 	private Rd rd;
@@ -81,10 +82,11 @@ public class StarPayUser {
 	@ManyToOne
 	@JoinColumn(name = "pd_id")
 	private PD pd;
-	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")	
 	@Enumerated(EnumType.STRING)
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
 	private AccessType acess=AccessType.VIEW;
 	
+
 	public AccessType getAcess() {
 		return acess;
 	}

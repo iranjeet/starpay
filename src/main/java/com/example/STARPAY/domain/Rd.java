@@ -55,9 +55,10 @@ public class Rd {
 																					// mapped class Object naem
 	private Set<StarPayUser> starPayUser; // in this case private Rd rd; ->rd is used in mappbed by
 
-	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
 	@Enumerated(EnumType.STRING)
-	private AccessType acess;
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
+	private AccessType acess=AccessType.VIEW;
+	
 	
 	public AccessType getAcess() {
 		return acess;

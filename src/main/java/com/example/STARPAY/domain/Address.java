@@ -41,11 +41,12 @@ public class Address {
 	private Boolean isActive = true;
 
 	@ManyToOne // TODO 29-4-2020 11:45PM can remove the comment Jucst check for the user
-	@JoinColumn(name = "user_id")
+	@JoinColumn(name = "userId")
 	private StarPayUser starPayUser;
 	@Enumerated(EnumType.STRING)
-	@Column(name = "acess", columnDefinition = "varchar(255) default 'VIEW'")
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
 	private AccessType acess=AccessType.VIEW;
+	
 	
 	public AccessType getAcess() {
 		return acess;

@@ -29,7 +29,9 @@ public class EMoneySetLimit {
 	
 	
 	@Enumerated(EnumType.STRING)
-	private AccessType acess;
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
+	private AccessType acess=AccessType.VIEW;
+	
 	
 	public AccessType getAcess() {
 		return acess;

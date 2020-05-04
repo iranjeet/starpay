@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.STARPAY.domain.StarPayUser;
 import com.example.STARPAY.dto.Request.RequestAllFeature;
+import com.example.STARPAY.dto.Request.RequestPortalUserManagement;
 import com.example.STARPAY.dto.Request.RequestRd;
 import com.example.STARPAY.dto.Request.RequestRetailerFeature;
 import com.example.STARPAY.dto.Request.RequestUserDetails;
@@ -69,8 +70,13 @@ public class StarPayController {
 		return starService.setButtonFeature(Id);
 	}
 	
+	//--------------------Portal Management User Add for the Acces for The Bayadito
 	
 	
+	@PostMapping("/setPortalUserManagement")
+	public GenericResponse setPortalUserManagement(@RequestBody RequestPortalUserManagement req) {
+		return starService.setPortalUserManagement(req);
+	}
 	
 	
 	

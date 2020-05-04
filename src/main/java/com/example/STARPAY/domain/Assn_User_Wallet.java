@@ -2,6 +2,8 @@ package com.example.STARPAY.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,7 +26,7 @@ public class Assn_User_Wallet {
 	
 	
 	@ManyToOne
-	@JoinColumn(name="starPayUserId")
+	@JoinColumn(name="UserId")
 	private StarPayUser starPayUser;
 	
 
@@ -35,6 +37,11 @@ public class Assn_User_Wallet {
 	
 	@Column(name="isActive")
 	private Boolean isActive=true;
+	
+	@Enumerated(EnumType.STRING)
+	@Column(name = "acess_type", columnDefinition = "varchar(255) default 'VIEW'")
+	private AccessType acess=AccessType.VIEW;
+	
 	
 	public Boolean getIsActive() {
 		return isActive;

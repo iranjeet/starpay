@@ -18,7 +18,7 @@ import com.example.STARPAY.dao.BayaditoDao;
 import com.example.STARPAY.dao.BillPaymentTransactionDao;
 import com.example.STARPAY.dao.EMoneySetLimitDao;
 import com.example.STARPAY.dao.EmoneyServiceDao;
-import com.example.STARPAY.dao.HistoryDao;
+//import com.example.STARPAY.dao.HistoryDao;
 import com.example.STARPAY.dao.PdDao;
 import com.example.STARPAY.dao.PortalUserHistoryDao;
 import com.example.STARPAY.dao.RdDao;
@@ -27,6 +27,7 @@ import com.example.STARPAY.dao.StarPayUserDao;
 import com.example.STARPAY.dao.WalletDao;
 import com.example.STARPAY.domain.RetailerFeature;
 import com.example.STARPAY.domain.StarPayUser;
+import com.example.STARPAY.domain.UserStatus;
 import com.example.STARPAY.domain.Wallet;
 import com.example.STARPAY.dto.Request.RequestAllFeature;
 import com.example.STARPAY.dto.Request.RequestPortalUserManagement;
@@ -59,37 +60,38 @@ public class StarPayService {
 
 	@Autowired
 	StarPayUserDao uDao;
-	
-//	@Autowired//XXX No mapping placed till date 1-5-2020 11:45 pm
-//	BayaditoDao bayaditoDao;
-	
+
+	@Autowired // XXX No mapping placed till date 1-5-2020 11:45 pm
+	BayaditoDao bayaditoDao;
+
 	@Autowired
 	BillPaymentTransactionDao billPaymentTransactionDao;
-	
+
 	@Autowired
 	EmoneyServiceDao emoneyServiceDao;
-	
+
 	@Autowired
 	EMoneySetLimitDao eMoneySetLimitDao;
-	
-	@Autowired
-	HistoryDao historyDao;
-	
+
+//	@Autowired
+//	HistoryDao historyDao;
+
 	@Autowired
 	PdDao pdDao;
-	
+
 	@Autowired
 	PortalUserHistoryDao portalUserHistoryDao;
-	
+
 	@Autowired
 	RdDao rdDao;
-	
+
 	@Autowired
 	RetailerFeatureDao retailerFeatureDao;
-	
-	@Autowired
-	WalletDao walletDao;		
 
+	@Autowired
+	WalletDao walletDao;
+	
+	UserStatus status;
 
 	private final Logger log = LoggerFactory.getLogger(StarPayService.class);
 
@@ -123,18 +125,19 @@ public class StarPayService {
 
 		return genericResponse;
 	}
+
 //---------------------------------------PORTAL USER MANAGEMENT ADD USER WITH ACCESS---------	
-	public GenericResponse portalUserManagement(RequestPortalUserManagement req) {
-		StarPayUser user=new StarPayUser();
-		Address address=new Address();
-		Bayadito bayadito=new Bayadito();
-		BillPaymentTransaction billPaymentTransaction=new BillPaymentTransaction();
-		EMoneyService eMoneyService=new EMoneyService();
-		EMoneySetLimit eMoneySetLimit=new EMoneySetLimit();
-		PD pd=new PD();
-		PortalUserHistory portalUserHistory=new PortalUserHistory();
-		Rd rd=new Rd();
-		Wallet wallet=new Wallet();
+	public GenericResponse setPortalUserManagement(RequestPortalUserManagement req) {
+		StarPayUser user = new StarPayUser();
+		Address address = new Address();
+//		Bayadito bayadito=new Bayadito();
+		BillPaymentTransaction billPaymentTransaction = new BillPaymentTransaction();
+		EMoneyService eMoneyService = new EMoneyService();
+		EMoneySetLimit eMoneySetLimit = new EMoneySetLimit();
+		PD pd = new PD();
+		PortalUserHistory portalUserHistory = new PortalUserHistory();
+		Rd rd = new Rd();
+		Wallet wallet = new Wallet();
 		rd.setAcess(req.getRdAccess());
 		pd.setAcess(req.getPdAccess());
 		portalUserHistory.setAcess(req.getPortalUserHistoryAccess());
@@ -154,12 +157,34 @@ public class StarPayService {
 		address.setCity(req.getCity());
 		address.setZipCode(req.getZipcode());
 		address.setStarPayUser(user);
+		user.setRd(rd);
+		user.setPd(pd);
+		portalUserHistory.setStarPayUser(user);
+		eMoneyService.setStarPayUser(user);
+		eMoneySetLimit.setStarPayUser(user);
+		billPaymentTransaction.setStarPayUser(user);
+		wallet.setStarPayUser(user);
+		pdDao.create(pd);
+		log.info("Pd AccessCreated for the User");
+		rdDao.create(rd);
+		log.info("rd Access Craeted for the user");
+		uDao.create(user);
+		log.info("User Created For The Portal User Manament With Access");
+		aDao.create(address);
+		log.info("Address Created for Id ", user.getId());
 		
-		
-		
-		
-		
-		GenericResponse genericResponse= new GenericResponse();
+		portalUserHistoryDao.create(portalUserHistory);
+		log.info("PoralUser Access Setted For UserAccessHistory");
+		emoneyServiceDao.create(eMoneyService);
+		log.info("emoneyService access created");
+		eMoneySetLimitDao.create(eMoneySetLimit);
+		log.info("Emoney set limit acces Given");
+		billPaymentTransactionDao.create(billPaymentTransaction);
+		log.info("Acces for bill transaction setted");
+		walletDao.create(wallet);
+		log.info("Wallet Access Setted for the User");
+
+		GenericResponse genericResponse = new GenericResponse();
 		genericResponse.setApiSucessStatus(true);
 		genericResponse.setApiMessage("User-Added sucessfully");
 		return genericResponse;
@@ -215,8 +240,6 @@ public class StarPayService {
 		log.info("User Added sucessfully");
 		return genericResponse;
 	}
-
-
 
 //------------------------Re-Usable Methods-----------------------------------------
 	void getPortalUserManagenment() {
