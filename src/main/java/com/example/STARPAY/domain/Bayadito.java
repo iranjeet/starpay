@@ -26,6 +26,9 @@ public class Bayadito {
 	private AccessType acess=AccessType.VIEW;
 	
 	
+	private String check;
+	
+	
 	public AccessType getAcess() {
 		return acess;
 	}
