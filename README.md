@@ -3,6 +3,10 @@ CRUD operation Spring boot
 star-pay-controller
 Star Pay Controller
 
+
+![image](https://user-images.githubusercontent.com/45733514/86473444-8722c600-bd5e-11ea-8609-fcca5a13089b.png)
+
+
 POST
 {BASE-URL}/starPay/addUser
 addUser->
