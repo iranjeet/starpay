@@ -20,7 +20,7 @@ public class StarpayRanjeetApplication {
 		System.out.println(" 		+\"\"\"\"\"+ 					");
 		System.out.println("	 	[| o o |]			 		" + Calendar.getInstance().getTime());
 		System.out.println(" 		|  ^  | 	 				" + new SimpleDateFormat().format(new Date()));
-		System.out.println(" 		| '-' | 	 				" + "Starpay @ Anvaya_Analytics_Lab_Private_Limited");
+		System.out.println(" 		| '-' | 	 				" + "WalletPay @Ranjeet");
 		System.out.println(" 		+-----+ 			 		" + "Port(s): 8888 (HTTP)");
 	}
 
